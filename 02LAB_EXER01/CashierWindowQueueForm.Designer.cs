@@ -37,9 +37,10 @@
             // 
             // btnRefresh
             // 
-            this.btnRefresh.Location = new System.Drawing.Point(54, 59);
+            this.btnRefresh.Location = new System.Drawing.Point(40, 48);
+            this.btnRefresh.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(146, 49);
+            this.btnRefresh.Size = new System.Drawing.Size(110, 40);
             this.btnRefresh.TabIndex = 0;
             this.btnRefresh.Text = "Refresh";
             this.btnRefresh.UseVisualStyleBackColor = true;
@@ -47,9 +48,10 @@
             // 
             // btnNext
             // 
-            this.btnNext.Location = new System.Drawing.Point(57, 114);
+            this.btnNext.Location = new System.Drawing.Point(40, 92);
+            this.btnNext.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnNext.Name = "btnNext";
-            this.btnNext.Size = new System.Drawing.Size(143, 51);
+            this.btnNext.Size = new System.Drawing.Size(110, 41);
             this.btnNext.TabIndex = 1;
             this.btnNext.Text = "Next";
             this.btnNext.UseVisualStyleBackColor = true;
@@ -58,9 +60,10 @@
             // listCashierQueue
             // 
             this.listCashierQueue.HideSelection = false;
-            this.listCashierQueue.Location = new System.Drawing.Point(206, 59);
+            this.listCashierQueue.Location = new System.Drawing.Point(154, 48);
+            this.listCashierQueue.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.listCashierQueue.Name = "listCashierQueue";
-            this.listCashierQueue.Size = new System.Drawing.Size(428, 360);
+            this.listCashierQueue.Size = new System.Drawing.Size(322, 293);
             this.listCashierQueue.TabIndex = 2;
             this.listCashierQueue.UseCompatibleStateImageBehavior = false;
             // 
@@ -70,12 +73,13 @@
             // 
             // CashierWindowQueueForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(600, 366);
             this.Controls.Add(this.listCashierQueue);
             this.Controls.Add(this.btnNext);
             this.Controls.Add(this.btnRefresh);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "CashierWindowQueueForm";
             this.Text = "CashierWindowQueueForm";
             this.Load += new System.EventHandler(this.CashierWindowQueueForm_Load);

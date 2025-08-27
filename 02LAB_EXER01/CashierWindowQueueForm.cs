@@ -14,8 +14,10 @@ namespace _02LAB_EXER01
     public partial class CashierWindowQueueForm: Form
     {
         private System.Windows.Forms.Timer timer = new System.Windows.Forms.Timer();
+        public CustomerViewCashier view;
         public CashierWindowQueueForm()
         {
+            view = new CustomerViewCashier();
             InitializeComponent();
             listCashierQueue.View = View.List;
             timer.Interval = 1000;
@@ -46,8 +48,11 @@ namespace _02LAB_EXER01
         {
             if (CashierClass.CashierQueue.Count > 0)
             {
-                CashierClass.CashierQueue.Dequeue();
+                var msg = CashierClass.CashierQueue.Dequeue();
                 DisplayCashierQueue(CashierClass.CashierQueue);
+                view.setEli(msg);
+                view.Show();
+                
             }
             else
             {
